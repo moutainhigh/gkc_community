@@ -20,14 +20,14 @@
 <div class="footer">
     <div class="wrapper">
         <div class="slogan">
-        <#--${indexIntroLabel} &nbsp; &nbsp;-->
-            <#--<a href="https://github.com/88250/symphony" target="_blank" class="tooltipped tooltipped-n"-->
-               <#--aria-label="${siteCodeLabel}">-->
-                <#--<svg class="icon-github">-->
-                    <#--<use xlink:href="#github"></use>-->
-                <#--</svg>-->
-            <#--</a> &nbsp;-->
-        <#--</div>-->
+        ${indexIntroLabel} &nbsp; &nbsp;
+            <a href="https://github.com/yiung/gkc_community.git" target="_blank" class="tooltipped tooltipped-n"
+               aria-label="${siteCodeLabel}">
+                <svg class="icon-github">
+                    <use xlink:href="#github"></use>
+                </svg>
+            </a> &nbsp;
+        </div>
         <div class="fn-flex-1">
             <div class="footer-nav fn-clear">
                 <a rel="help" href="${servePath}/about">${aboutLabel}</a>
