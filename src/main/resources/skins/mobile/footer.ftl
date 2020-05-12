@@ -18,28 +18,28 @@
 
 -->
 <div class="footer">
-    <div class="wrapper ft-smaller">
-        <div class="footer-nav">
-            ${visionLabel}
-        </div>
-        <div class="fn-hr5"></div>
-        <div>
-            ${sloganLabel}
-        </div>
-        <div class="fn-hr5"></div>
-        <div>
-            © ${year} <a href="https://b3log.org" target="_blank">B3log 开源</a>旗下云南链滴科技有限公司版权所有
-            <div class="fn-hr5"></div>
-            <a href="https://sym.b3log.org" target="_blank">Sym</a>
-            ${version}
-        </div>
-        <#if footerBeiAnHao != ''>
-            <div class="fn-hr5"></div>
-            <div>
-                <a href="http://www.miitbeian.gov.cn/" target="_blank">${footerBeiAnHao}</a>
-            </div>
-        </#if>
-    </div>
+    <#--<div class="wrapper ft-smaller">-->
+        <#--<div class="footer-nav">-->
+            <#--${visionLabel}-->
+        <#--</div>-->
+        <#--<div class="fn-hr5"></div>-->
+        <#--<div>-->
+            <#--${sloganLabel}-->
+        <#--</div>-->
+        <#--<div class="fn-hr5"></div>-->
+        <#--<div>-->
+            <#--© ${year} <a href="https://b3log.org" target="_blank">B3log 开源</a>旗下云南链滴科技有限公司版权所有-->
+            <#--<div class="fn-hr5"></div>-->
+            <#--<a href="https://sym.b3log.org" target="_blank">Sym</a>-->
+            <#--${version}-->
+        <#--</div>-->
+        <#--<#if footerBeiAnHao != ''>-->
+            <#--<div class="fn-hr5"></div>-->
+            <#--<div>-->
+                <#--<a href="http://www.miitbeian.gov.cn/" target="_blank">${footerBeiAnHao}</a>-->
+            <#--</div>-->
+        <#--</#if>-->
+    <#--</div>-->
 </div>
 <script src="${staticServePath}/js/symbol-defs${miniPostfix}.js?${staticResourceVersion}"></script>
 <script src="${staticServePath}/js/lib/compress/libs.min.js?${staticResourceVersion}"></script>

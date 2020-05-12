@@ -77,37 +77,37 @@
                 </div>
             </div>
         </div>
-        <#if tags?size != 0>
-        <div class="index-wrap">
-            <div class="wrapper">
-                <ul class="tag-desc fn-clear">
-                    <#list tags as tag>
-                    <li>
-                        <a rel="nofollow" href="${servePath}/tag/${tag.tagURI}">
-                            <#if tag.tagIconPath!="">
-                            <img src="${tag.tagIconPath}" alt="${tag.tagTitle}" />
-                            </#if>
-                            ${tag.tagTitle}
-                        </a>
-                    </li>
-                    </#list>
-                </ul>
-            </div>
-        </div>
-        </#if>
-        <div class="fn-hr10"></div>
-        <div class="main">
-            <div class="wrapper">
-                <#if ADLabel != ''>
-                <div class="module">
-                    <div class="module-header" style="background-color: #7ea5c8">
-                        <a href="${servePath}/about">${sponsorLabel}</a>
-                    </div>
-                    <div class="ad module-panel fn-clear">
-                        ${ADLabel}
-                    </div>
-                </div>
-                </#if>
+        <#--<#if tags?size != 0>-->
+        <#--<div class="index-wrap">-->
+            <#--<div class="wrapper">-->
+                <#--<ul class="tag-desc fn-clear">-->
+                    <#--<#list tags as tag>-->
+                    <#--<li>-->
+                        <#--<a rel="nofollow" href="${servePath}/tag/${tag.tagURI}">-->
+                            <#--<#if tag.tagIconPath!="">-->
+                            <#--<img src="${tag.tagIconPath}" alt="${tag.tagTitle}" />-->
+                            <#--</#if>-->
+                            <#--${tag.tagTitle}-->
+                        <#--</a>-->
+                    <#--</li>-->
+                    <#--</#list>-->
+                <#--</ul>-->
+            <#--</div>-->
+        <#--</div>-->
+        <#--</#if>-->
+        <#--<div class="fn-hr10"></div>-->
+        <#--<div class="main">-->
+            <#--<div class="wrapper">-->
+                <#--<#if ADLabel != ''>-->
+                <#--<div class="module">-->
+                    <#--<div class="module-header" style="background-color: #7ea5c8">-->
+                        <#--<a href="${servePath}/about">${sponsorLabel}</a>-->
+                    <#--</div>-->
+                    <#--<div class="ad module-panel fn-clear">-->
+                        <#--${ADLabel}-->
+                    <#--</div>-->
+                <#--</div>-->
+                <#--</#if>-->
                 <div class="module">
                     <div class="module-header" style="background-color: #9cd462">
                         <a href="${servePath}/pre-post">${postArticleLabel}</a>
@@ -124,11 +124,11 @@
         </div>
     </div>
 
-    <div class="slogan">
-        ${indexIntroLabel}&nbsp;
-        <a href="https://github.com/88250/symphony" target="_blank">
-            <svg><use xlink:href="#github"></use></svg></a>
-    </div>
+    <#--<div class="slogan">-->
+        <#--${indexIntroLabel}&nbsp;-->
+        <#--<a href="https://github.com/88250/symphony" target="_blank">-->
+            <#--<svg><use xlink:href="#github"></use></svg></a>-->
+    <#--</div>-->
     <#include "footer.ftl">
 </body>
 </html>

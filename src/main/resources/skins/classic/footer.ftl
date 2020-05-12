@@ -20,36 +20,36 @@
 <div class="footer">
     <div class="wrapper">
         <div class="slogan">
-        ${indexIntroLabel} &nbsp; &nbsp;
-            <a href="https://github.com/88250/symphony" target="_blank" class="tooltipped tooltipped-n"
-               aria-label="${siteCodeLabel}">
-                <svg class="icon-github">
-                    <use xlink:href="#github"></use>
-                </svg>
-            </a> &nbsp;
-        </div>
+        <#--${indexIntroLabel} &nbsp; &nbsp;-->
+            <#--<a href="https://github.com/88250/symphony" target="_blank" class="tooltipped tooltipped-n"-->
+               <#--aria-label="${siteCodeLabel}">-->
+                <#--<svg class="icon-github">-->
+                    <#--<use xlink:href="#github"></use>-->
+                <#--</svg>-->
+            <#--</a> &nbsp;-->
+        <#--</div>-->
         <div class="fn-flex-1">
             <div class="footer-nav fn-clear">
                 <a rel="help" href="${servePath}/about">${aboutLabel}</a>
                 <a href="${servePath}/tag/announcement">${symAnnouncementLabel}</a>
-                <a href="${servePath}/domains">${domainLabel}</a>
+                <#--<a href="${servePath}/domains">${domainLabel}</a>-->
                 <a href="${servePath}/tags">${tagLabel}</a>
                 <a href="${servePath}/statistic">${dataStatLabel}</a>
                 <div class="fn-right">
                 ${visionLabel}
                 </div>
             </div>
-            <div class="fn-clear ft-smaller">
-            ${sloganLabel}
-                <div class="fn-right">
-                    <#if footerBeiAnHao != ''>
-                        <a href="http://www.miitbeian.gov.cn/" target="_blank">${footerBeiAnHao}</a> •
-                    </#if>
-                    © ${year} <a href="https://b3log.org" target="_blank">B3log 开源</a>旗下云南链滴科技有限公司版权所有 •
-                    <a href="https://sym.b3log.org" target="_blank">Sym</a>
-                ${version}
-                </div>
-            </div>
+            <#--<div class="fn-clear ft-smaller">-->
+            <#--${sloganLabel}-->
+                <#--<div class="fn-right">-->
+                    <#--<#if footerBeiAnHao != ''>-->
+                        <#--<a href="http://www.miitbeian.gov.cn/" target="_blank">${footerBeiAnHao}</a> •-->
+                    <#--</#if>-->
+                    <#--© ${year} <a href="https://b3log.org" target="_blank">B3log 开源</a>旗下云南链滴科技有限公司版权所有 •-->
+                    <#--<a href="https://sym.b3log.org" target="_blank">Sym</a>-->
+                <#--${version}-->
+                <#--</div>-->
+            <#--</div>-->
         </div>
     </div>
 </div>

@@ -65,7 +65,7 @@ public final class Server extends BaseServer {
         Stopwatchs.start("Booting");
 
         final Options options = new Options();
-        final Option listenPortOpt = Option.builder("lp").longOpt("listen_port").argName("LISTEN_PORT").hasArg().desc("listen port, default is 8080").build();
+        final Option listenPortOpt = Option.builder("lp").longOpt("listen_port").argName("LISTEN_PORT").hasArg().desc("listen port, default is 20000").build();
         options.addOption(listenPortOpt);
 
         final Option serverSchemeOpt = Option.builder("ss").longOpt("server_scheme").argName("SERVER_SCHEME").hasArg().desc("browser visit protocol, default is http").build();
@@ -74,7 +74,7 @@ public final class Server extends BaseServer {
         final Option serverHostOpt = Option.builder("sh").longOpt("server_host").argName("SERVER_HOST").hasArg().desc("browser visit domain name, default is localhost").build();
         options.addOption(serverHostOpt);
 
-        final Option serverPortOpt = Option.builder("sp").longOpt("server_port").argName("SERVER_PORT").hasArg().desc("browser visit port, default is 8080").build();
+        final Option serverPortOpt = Option.builder("sp").longOpt("server_port").argName("SERVER_PORT").hasArg().desc("browser visit port, default is 20000").build();
         options.addOption(serverPortOpt);
 
         final Option staticServerSchemeOpt = Option.builder("sss").longOpt("static_server_scheme").argName("STATIC_SERVER_SCHEME").hasArg().desc("browser visit static resource protocol, default is http").build();
@@ -116,7 +116,8 @@ public final class Server extends BaseServer {
 
         String portArg = commandLine.getOptionValue("listen_port");
         if (!Strings.isNumeric(portArg)) {
-            portArg = "8080";
+//            portArg = "8080";
+            portArg = "20000";
         }
 
         try {

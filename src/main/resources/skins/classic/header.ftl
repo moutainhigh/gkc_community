@@ -24,37 +24,38 @@
         </a>
     </h1>
     <div class="nav-tabs">
-        <#list domains as domain>
-        <a pjax-title="${domain.domainTitle} - ${domainLabel} - ${symphonyLabel}"
-           href="${servePath}/domain/${domain.domainURI}"<#if selected?? && selected == domain.domainURI>
-           class="current"</#if>>${domain.domainIconPath} ${domain.domainTitle}</a>
-        </#list>
-        <a pjax-title="${latestLabel} - ${symphonyLabel}"
-           href="${servePath}/recent"<#if selected?? && 'recent' == selected> class="current"</#if>>
-            <svg>
-                <use xlink:href="#refresh"></use>
-            </svg> ${latestLabel}</a>
+        <#--<#list domains as domain>-->
+        <#--<a pjax-title="${domain.domainTitle} - ${domainLabel} - ${symphonyLabel}"-->
+           <#--href="${servePath}/domain/${domain.domainURI}"<#if selected?? && selected == domain.domainURI>-->
+           <#--class="current"</#if>>${domain.domainIconPath} ${domain.domainTitle}</a>-->
+        <#--</#list>-->
+            <a href="${servePath}/domains">社区</a>
+        <#--<a pjax-title="${latestLabel} - ${symphonyLabel}"-->
+           <#--href="${servePath}/recent"<#if selected?? && 'recent' == selected> class="current"</#if>>-->
+            <#--<svg>-->
+                <#--<use xlink:href="#refresh"></use>-->
+            <#--</svg> ${latestLabel}</a>-->
         <a pjax-title="${qnaLabel} - ${symphonyLabel}"
            href="${servePath}/qna"<#if selected?? && 'qna' == selected> class="current"</#if>>
             <svg>
                 <use xlink:href="#iconAsk"></use>
             </svg> ${qnaLabel}</a>
-        <a href="${servePath}/perfect"<#if selected?? && 'perfect' == selected> class="current"</#if>>
-            <svg>
-                <use xlink:href="#perfect"></use>
-            </svg> ${perfectLabel}</a>
-        <#if isLoggedIn && "" != currentUser.userCity>
-        <a href="${servePath}/city/my"<#if selected?? && 'city' == selected> class="current"</#if>>
-            <svg>
-                <use xlink:href="#local"></use>
-            </svg> ${currentUser.userCity}</a>
-        </#if>
-        <#if isLoggedIn>
-        <a href="${servePath}/watch"<#if selected?? && 'watch' == selected> class="current"</#if>>
-            <svg>
-                <use xlink:href="#view"></use>
-            </svg> ${followLabel}</a>
-        </#if>
+        <#--<a href="${servePath}/perfect"<#if selected?? && 'perfect' == selected> class="current"</#if>>-->
+            <#--<svg>-->
+                <#--<use xlink:href="#perfect"></use>-->
+            <#--</svg> ${perfectLabel}</a>-->
+        <#--<#if isLoggedIn && "" != currentUser.userCity>-->
+        <#--<a href="${servePath}/city/my"<#if selected?? && 'city' == selected> class="current"</#if>>-->
+            <#--<svg>-->
+                <#--<use xlink:href="#local"></use>-->
+            <#--</svg> ${currentUser.userCity}</a>-->
+        <#--</#if>-->
+        <#--<#if isLoggedIn>-->
+        <#--<a href="${servePath}/watch"<#if selected?? && 'watch' == selected> class="current"</#if>>-->
+            <#--<svg>-->
+                <#--<use xlink:href="#view"></use>-->
+            <#--</svg> ${followLabel}</a>-->
+        <#--</#if>-->
     </div>
     <#if esEnabled || algoliaEnabled>
     <form class="responsive-hide fn-left" target="_blank" action="/search">

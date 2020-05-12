@@ -24,9 +24,9 @@
     <title>${forwardingLabel} - ${symphonyLabel}</title>
     <meta name="description" content="${forwardingLabel}"/>
     <meta name="robots" content="noindex">
-    <link rel="icon" type="image/png" href="${staticServePath}/images/favicon.png"/>
-    <link rel="apple-touch-icon" href="${staticServePath}/images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="${staticServePath}/images/favicon.png">
+    <#--<link rel="icon" type="image/png" href="${staticServePath}/images/favicon.png"/>-->
+    <#--<link rel="apple-touch-icon" href="${staticServePath}/images/apple-touch-icon.png">-->
+    <#--<link rel="shortcut icon" type="image/x-icon" href="${staticServePath}/images/favicon.png">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <style>
         html {
@@ -103,14 +103,14 @@
 <body class="body--ready">
 <canvas class="canvas"></canvas>
 <div class="text">
-    是否跳转至 <br>
+    是否跳转至第三方地址  <br>
     <a rel="nofollow" href="${forwardURL}">${forwardURL}</a><br/>
     <button onclick="window.location.replace('${forwardURL}')">确定</button>
 </div>
-<div>
-    <a href="https://github.com/88250/symphony">GitHub</a> &nbsp;
-    <a href="https://b3log.org/" target="_blank" rel="noopener">B3log</a>
-</div>
+<#--<div>-->
+    <#--<a href="https://github.com/88250/symphony">GitHub</a> &nbsp;-->
+    <#--<a href="https://b3log.org/" target="_blank" rel="noopener">B3log</a>-->
+<#--</div>-->
 <script>
     var S = {
         init: function () {
@@ -276,7 +276,7 @@
                         break;
 
                     default:
-                        S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'Sym' : current));
+                        S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'GKC' : current));
                 }
             }, 2000, sequence.length);
         }
