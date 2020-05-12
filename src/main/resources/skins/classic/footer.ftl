@@ -33,11 +33,11 @@
                 <a rel="help" href="${servePath}/about">${aboutLabel}</a>
                 <a href="${servePath}/tag/announcement">${symAnnouncementLabel}</a>
                 <#--<a href="${servePath}/domains">${domainLabel}</a>-->
-                <a href="${servePath}/tags">${tagLabel}</a>
+                <#--<a href="${servePath}/tags">${tagLabel}</a>-->
                 <a href="${servePath}/statistic">${dataStatLabel}</a>
-                <div class="fn-right">
-                ${visionLabel}
-                </div>
+                <#--<div class="fn-right">-->
+                <#--${visionLabel}-->
+                <#--</div>-->
             </div>
             <#--<div class="fn-clear ft-smaller">-->
             <#--${sloganLabel}-->

@@ -29,7 +29,7 @@
            <#--href="${servePath}/domain/${domain.domainURI}"<#if selected?? && selected == domain.domainURI>-->
            <#--class="current"</#if>>${domain.domainIconPath} ${domain.domainTitle}</a>-->
         <#--</#list>-->
-            <a href="${servePath}/domains">社区</a>
+            <a href="${servePath}/domains">领域</a>
         <#--<a pjax-title="${latestLabel} - ${symphonyLabel}"-->
            <#--href="${servePath}/recent"<#if selected?? && 'recent' == selected> class="current"</#if>>-->
             <#--<svg>-->

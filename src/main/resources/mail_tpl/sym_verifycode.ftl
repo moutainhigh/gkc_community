@@ -120,7 +120,7 @@
                                                                             <tbody><tr style="border-collapse:collapse">
                                                                                     <td style="border-collapse:collapse;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;padding:0 0 15px">
                                                                                         <ul>
-                                                                                            <li>我们正在构建一个活跃的小众社区</li>
+                                                                                            <li>我们正在构建一个活跃的GKC社区</li>
                                                                                             <li>大家在这里相互信任，以 平等 • 自由 • 奔放 的价值观进行分享交流</li>
                                                                                             <li>最终，希望大家能够找到与自己志同道合的伙伴，共同成长</li>
                                                                                         </ul>
